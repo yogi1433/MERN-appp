@@ -19,7 +19,7 @@ function Signup() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3001/register", formData)
+      .post("http://backend-container:3001/register", formData)
       .then((result) => {
         console.log(result);
         if (result.data === "notexist") {

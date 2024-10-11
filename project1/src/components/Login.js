@@ -16,7 +16,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3001/login", formData)
+      .post("http://backend-container:3001/login", formData)
       .then((result) => {
         console.log(result);
         if (
